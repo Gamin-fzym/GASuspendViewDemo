@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		248D9B3A4AB02442176355A0 /* Pods_GASuspendViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936137D6EF8E5DB059264547 /* Pods_GASuspendViewDemo.framework */; };
+		3DF54A47A54C2A0BC4C2F299 /* Pods_GASuspendViewDemo_GASuspendViewDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD83272C971FE902420E8AC /* Pods_GASuspendViewDemo_GASuspendViewDemoUITests.framework */; };
+		9A4817DB23CED3B94108D803 /* Pods_GASuspendViewDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8491F573792C5F666536406 /* Pods_GASuspendViewDemoTests.framework */; };
+		E278278629D0177B00424605 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278278529D0177B00424605 /* AppDelegate.swift */; };
+		E278278A29D0177B00424605 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278278929D0177B00424605 /* ViewController.swift */; };
+		E278278D29D0177B00424605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E278278B29D0177B00424605 /* Main.storyboard */; };
+		E278278F29D0177E00424605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E278278E29D0177E00424605 /* Assets.xcassets */; };
+		E278279229D0177E00424605 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E278279029D0177E00424605 /* LaunchScreen.storyboard */; };
+		E278279D29D0177F00424605 /* GASuspendViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278279C29D0177F00424605 /* GASuspendViewDemoTests.swift */; };
+		E27827A729D0177F00424605 /* GASuspendViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27827A629D0177F00424605 /* GASuspendViewDemoUITests.swift */; };
+		E27827A929D0177F00424605 /* GASuspendViewDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27827A829D0177F00424605 /* GASuspendViewDemoUITestsLaunchTests.swift */; };
+		E27827B929D0184D00424605 /* GASuspendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27827B629D0184C00424605 /* GASuspendManager.swift */; };
+		E27827BA29D0184D00424605 /* GASuspendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27827B729D0184C00424605 /* GASuspendView.swift */; };
+		E27827BB29D0184D00424605 /* GASuspendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27827B829D0184C00424605 /* GASuspendModel.swift */; };
+		E27827BF29D025ED00424605 /* NextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27827BE29D025ED00424605 /* NextVC.swift */; };
+		E27827C129D027FB00424605 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27827C029D027FB00424605 /* BaseViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E278279929D0177F00424605 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E278277A29D0177A00424605 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E278278129D0177B00424605;
+			remoteInfo = GASuspendViewDemo;
+		};
+		E27827A329D0177F00424605 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E278277A29D0177A00424605 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E278278129D0177B00424605;
+			remoteInfo = GASuspendViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09A8F811386B73E817C6A086 /* Pods-GASuspendViewDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GASuspendViewDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-GASuspendViewDemoTests/Pods-GASuspendViewDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		19625EF2E33EBB970A59A027 /* Pods-GASuspendViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GASuspendViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-GASuspendViewDemo/Pods-GASuspendViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		50CD0C76F964F183A42C3424 /* Pods-GASuspendViewDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GASuspendViewDemoTests.release.xcconfig"; path = "Target Support Files/Pods-GASuspendViewDemoTests/Pods-GASuspendViewDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		936137D6EF8E5DB059264547 /* Pods_GASuspendViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GASuspendViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96569D8FDC007CEE11CA066E /* Pods-GASuspendViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GASuspendViewDemo.release.xcconfig"; path = "Target Support Files/Pods-GASuspendViewDemo/Pods-GASuspendViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D8491F573792C5F666536406 /* Pods_GASuspendViewDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GASuspendViewDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBD83272C971FE902420E8AC /* Pods_GASuspendViewDemo_GASuspendViewDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GASuspendViewDemo_GASuspendViewDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E278278229D0177B00424605 /* GASuspendViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GASuspendViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E278278529D0177B00424605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E278278929D0177B00424605 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E278278C29D0177B00424605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E278278E29D0177E00424605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E278279129D0177E00424605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E278279329D0177E00424605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E278279829D0177F00424605 /* GASuspendViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GASuspendViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E278279C29D0177F00424605 /* GASuspendViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GASuspendViewDemoTests.swift; sourceTree = "<group>"; };
+		E27827A229D0177F00424605 /* GASuspendViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GASuspendViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E27827A629D0177F00424605 /* GASuspendViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GASuspendViewDemoUITests.swift; sourceTree = "<group>"; };
+		E27827A829D0177F00424605 /* GASuspendViewDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GASuspendViewDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E27827B629D0184C00424605 /* GASuspendManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GASuspendManager.swift; sourceTree = "<group>"; };
+		E27827B729D0184C00424605 /* GASuspendView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GASuspendView.swift; sourceTree = "<group>"; };
+		E27827B829D0184C00424605 /* GASuspendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GASuspendModel.swift; sourceTree = "<group>"; };
+		E27827BE29D025ED00424605 /* NextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextVC.swift; sourceTree = "<group>"; };
+		E27827C029D027FB00424605 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E6275CF7B55C0285781E49C4 /* Pods-GASuspendViewDemo-GASuspendViewDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GASuspendViewDemo-GASuspendViewDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-GASuspendViewDemo-GASuspendViewDemoUITests/Pods-GASuspendViewDemo-GASuspendViewDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F5D2E2B30AB0FB7331C718A1 /* Pods-GASuspendViewDemo-GASuspendViewDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GASuspendViewDemo-GASuspendViewDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-GASuspendViewDemo-GASuspendViewDemoUITests/Pods-GASuspendViewDemo-GASuspendViewDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E278277F29D0177B00424605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248D9B3A4AB02442176355A0 /* Pods_GASuspendViewDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E278279529D0177F00424605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4817DB23CED3B94108D803 /* Pods_GASuspendViewDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E278279F29D0177F00424605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF54A47A54C2A0BC4C2F299 /* Pods_GASuspendViewDemo_GASuspendViewDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45E8CE482D3465246C316CA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19625EF2E33EBB970A59A027 /* Pods-GASuspendViewDemo.debug.xcconfig */,
+				96569D8FDC007CEE11CA066E /* Pods-GASuspendViewDemo.release.xcconfig */,
+				F5D2E2B30AB0FB7331C718A1 /* Pods-GASuspendViewDemo-GASuspendViewDemoUITests.debug.xcconfig */,
+				E6275CF7B55C0285781E49C4 /* Pods-GASuspendViewDemo-GASuspendViewDemoUITests.release.xcconfig */,
+				09A8F811386B73E817C6A086 /* Pods-GASuspendViewDemoTests.debug.xcconfig */,
+				50CD0C76F964F183A42C3424 /* Pods-GASuspendViewDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF432B5BE6AEAC644DB79A50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				936137D6EF8E5DB059264547 /* Pods_GASuspendViewDemo.framework */,
+				DBD83272C971FE902420E8AC /* Pods_GASuspendViewDemo_GASuspendViewDemoUITests.framework */,
+				D8491F573792C5F666536406 /* Pods_GASuspendViewDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E278277929D0177A00424605 = {
+			isa = PBXGroup;
+			children = (
+				E278278429D0177B00424605 /* GASuspendViewDemo */,
+				E278279B29D0177F00424605 /* GASuspendViewDemoTests */,
+				E27827A529D0177F00424605 /* GASuspendViewDemoUITests */,
+				E278278329D0177B00424605 /* Products */,
+				45E8CE482D3465246C316CA1 /* Pods */,
+				CF432B5BE6AEAC644DB79A50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E278278329D0177B00424605 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E278278229D0177B00424605 /* GASuspendViewDemo.app */,
+				E278279829D0177F00424605 /* GASuspendViewDemoTests.xctest */,
+				E27827A229D0177F00424605 /* GASuspendViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E278278429D0177B00424605 /* GASuspendViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E278278529D0177B00424605 /* AppDelegate.swift */,
+				E278278929D0177B00424605 /* ViewController.swift */,
+				E27827BE29D025ED00424605 /* NextVC.swift */,
+				E27827C029D027FB00424605 /* BaseViewController.swift */,
+				E27827B529D0184C00424605 /* Suspend */,
+				E278278B29D0177B00424605 /* Main.storyboard */,
+				E278278E29D0177E00424605 /* Assets.xcassets */,
+				E278279029D0177E00424605 /* LaunchScreen.storyboard */,
+				E278279329D0177E00424605 /* Info.plist */,
+			);
+			path = GASuspendViewDemo;
+			sourceTree = "<group>";
+		};
+		E278279B29D0177F00424605 /* GASuspendViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E278279C29D0177F00424605 /* GASuspendViewDemoTests.swift */,
+			);
+			path = GASuspendViewDemoTests;
+			sourceTree = "<group>";
+		};
+		E27827A529D0177F00424605 /* GASuspendViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E27827A629D0177F00424605 /* GASuspendViewDemoUITests.swift */,
+				E27827A829D0177F00424605 /* GASuspendViewDemoUITestsLaunchTests.swift */,
+			);
+			path = GASuspendViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		E27827B529D0184C00424605 /* Suspend */ = {
+			isa = PBXGroup;
+			children = (
+				E27827B629D0184C00424605 /* GASuspendManager.swift */,
+				E27827B729D0184C00424605 /* GASuspendView.swift */,
+				E27827B829D0184C00424605 /* GASuspendModel.swift */,
+			);
+			path = Suspend;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E278278129D0177B00424605 /* GASuspendViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E27827AC29D0177F00424605 /* Build configuration list for PBXNativeTarget "GASuspendViewDemo" */;
+			buildPhases = (
+				67FDD46B8D691B6B5F645530 /* [CP] Check Pods Manifest.lock */,
+				E278277E29D0177B00424605 /* Sources */,
+				E278277F29D0177B00424605 /* Frameworks */,
+				E278278029D0177B00424605 /* Resources */,
+				D535765C376EB763E86427BE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GASuspendViewDemo;
+			productName = GASuspendViewDemo;
+			productReference = E278278229D0177B00424605 /* GASuspendViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E278279729D0177F00424605 /* GASuspendViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E27827AF29D0177F00424605 /* Build configuration list for PBXNativeTarget "GASuspendViewDemoTests" */;
+			buildPhases = (
+				0A783A5AC3A635978455186E /* [CP] Check Pods Manifest.lock */,
+				E278279429D0177F00424605 /* Sources */,
+				E278279529D0177F00424605 /* Frameworks */,
+				E278279629D0177F00424605 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E278279A29D0177F00424605 /* PBXTargetDependency */,
+			);
+			name = GASuspendViewDemoTests;
+			productName = GASuspendViewDemoTests;
+			productReference = E278279829D0177F00424605 /* GASuspendViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E27827A129D0177F00424605 /* GASuspendViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E27827B229D0177F00424605 /* Build configuration list for PBXNativeTarget "GASuspendViewDemoUITests" */;
+			buildPhases = (
+				CC63CCA1B56EF879EB17CAAB /* [CP] Check Pods Manifest.lock */,
+				E278279E29D0177F00424605 /* Sources */,
+				E278279F29D0177F00424605 /* Frameworks */,
+				E27827A029D0177F00424605 /* Resources */,
+				46D8214942153C53FDCACA09 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E27827A429D0177F00424605 /* PBXTargetDependency */,
+			);
+			name = GASuspendViewDemoUITests;
+			productName = GASuspendViewDemoUITests;
+			productReference = E27827A229D0177F00424605 /* GASuspendViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E278277A29D0177A00424605 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					E278278129D0177B00424605 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					E278279729D0177F00424605 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = E278278129D0177B00424605;
+					};
+					E27827A129D0177F00424605 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = E278278129D0177B00424605;
+					};
+				};
+			};
+			buildConfigurationList = E278277D29D0177A00424605 /* Build configuration list for PBXProject "GASuspendViewDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E278277929D0177A00424605;
+			productRefGroup = E278278329D0177B00424605 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E278278129D0177B00424605 /* GASuspendViewDemo */,
+				E278279729D0177F00424605 /* GASuspendViewDemoTests */,
+				E27827A129D0177F00424605 /* GASuspendViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E278278029D0177B00424605 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E278279229D0177E00424605 /* LaunchScreen.storyboard in Resources */,
+				E278278F29D0177E00424605 /* Assets.xcassets in Resources */,
+				E278278D29D0177B00424605 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E278279629D0177F00424605 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E27827A029D0177F00424605 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A783A5AC3A635978455186E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GASuspendViewDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46D8214942153C53FDCACA09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GASuspendViewDemo-GASuspendViewDemoUITests/Pods-GASuspendViewDemo-GASuspendViewDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GASuspendViewDemo-GASuspendViewDemoUITests/Pods-GASuspendViewDemo-GASuspendViewDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GASuspendViewDemo-GASuspendViewDemoUITests/Pods-GASuspendViewDemo-GASuspendViewDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67FDD46B8D691B6B5F645530 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GASuspendViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC63CCA1B56EF879EB17CAAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GASuspendViewDemo-GASuspendViewDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D535765C376EB763E86427BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GASuspendViewDemo/Pods-GASuspendViewDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GASuspendViewDemo/Pods-GASuspendViewDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GASuspendViewDemo/Pods-GASuspendViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E278277E29D0177B00424605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E278278A29D0177B00424605 /* ViewController.swift in Sources */,
+				E27827B929D0184D00424605 /* GASuspendManager.swift in Sources */,
+				E278278629D0177B00424605 /* AppDelegate.swift in Sources */,
+				E27827BA29D0184D00424605 /* GASuspendView.swift in Sources */,
+				E27827BB29D0184D00424605 /* GASuspendModel.swift in Sources */,
+				E27827C129D027FB00424605 /* BaseViewController.swift in Sources */,
+				E27827BF29D025ED00424605 /* NextVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E278279429D0177F00424605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E278279D29D0177F00424605 /* GASuspendViewDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E278279E29D0177F00424605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E27827A729D0177F00424605 /* GASuspendViewDemoUITests.swift in Sources */,
+				E27827A929D0177F00424605 /* GASuspendViewDemoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E278279A29D0177F00424605 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E278278129D0177B00424605 /* GASuspendViewDemo */;
+			targetProxy = E278279929D0177F00424605 /* PBXContainerItemProxy */;
+		};
+		E27827A429D0177F00424605 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E278278129D0177B00424605 /* GASuspendViewDemo */;
+			targetProxy = E27827A329D0177F00424605 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E278278B29D0177B00424605 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E278278C29D0177B00424605 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E278279029D0177E00424605 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E278279129D0177E00424605 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E27827AA29D0177F00424605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E27827AB29D0177F00424605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E27827AD29D0177F00424605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19625EF2E33EBB970A59A027 /* Pods-GASuspendViewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5G5L542228;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GASuspendViewDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suspend.www.GASuspendViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E27827AE29D0177F00424605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96569D8FDC007CEE11CA066E /* Pods-GASuspendViewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5G5L542228;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GASuspendViewDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suspend.www.GASuspendViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E27827B029D0177F00424605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09A8F811386B73E817C6A086 /* Pods-GASuspendViewDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5G5L542228;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suspend.www.GASuspendViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GASuspendViewDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GASuspendViewDemo";
+			};
+			name = Debug;
+		};
+		E27827B129D0177F00424605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50CD0C76F964F183A42C3424 /* Pods-GASuspendViewDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5G5L542228;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suspend.www.GASuspendViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GASuspendViewDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GASuspendViewDemo";
+			};
+			name = Release;
+		};
+		E27827B329D0177F00424605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D2E2B30AB0FB7331C718A1 /* Pods-GASuspendViewDemo-GASuspendViewDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5G5L542228;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suspend.www.GASuspendViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GASuspendViewDemo;
+			};
+			name = Debug;
+		};
+		E27827B429D0177F00424605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6275CF7B55C0285781E49C4 /* Pods-GASuspendViewDemo-GASuspendViewDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5G5L542228;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.suspend.www.GASuspendViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GASuspendViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E278277D29D0177A00424605 /* Build configuration list for PBXProject "GASuspendViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E27827AA29D0177F00424605 /* Debug */,
+				E27827AB29D0177F00424605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E27827AC29D0177F00424605 /* Build configuration list for PBXNativeTarget "GASuspendViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E27827AD29D0177F00424605 /* Debug */,
+				E27827AE29D0177F00424605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E27827AF29D0177F00424605 /* Build configuration list for PBXNativeTarget "GASuspendViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E27827B029D0177F00424605 /* Debug */,
+				E27827B129D0177F00424605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E27827B229D0177F00424605 /* Build configuration list for PBXNativeTarget "GASuspendViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E27827B329D0177F00424605 /* Debug */,
+				E27827B429D0177F00424605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E278277A29D0177A00424605 /* Project object */;
+}

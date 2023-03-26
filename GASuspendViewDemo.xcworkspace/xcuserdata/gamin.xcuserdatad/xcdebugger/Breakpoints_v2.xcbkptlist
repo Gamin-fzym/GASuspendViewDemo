@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A3531B9D-5A1F-44D9-A45B-A0AC70FB7D2B"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE5454A8-C93B-49B4-A104-6AE30857E3C5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GASuspendViewDemo/Suspend/GASuspendManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "setupSuspendView(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7416310-2EAD-4B05-AA42-D176D2ADDB4A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GASuspendViewDemo/Suspend/GASuspendView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "model"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "D7416310-2EAD-4B05-AA42-D176D2ADDB4A - 54e382feadf02c92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GASuspendViewDemo.GASuspendView.model.didset : Swift.Optional&lt;GASuspendViewDemo.GASuspendModel&gt;"
+                  moduleName = "GASuspendViewDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gamin/Documents/GASuspendViewDemo/GASuspendViewDemo/Suspend/GASuspendView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "D7416310-2EAD-4B05-AA42-D176D2ADDB4A - 24c0cb612937180"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Kingfisher.RetrieveImageResult, Kingfisher.KingfisherError&gt;) -&gt; () in GASuspendViewDemo.GASuspendView.model.didset : Swift.Optional&lt;GASuspendViewDemo.GASuspendModel&gt;"
+                  moduleName = "GASuspendViewDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gamin/Documents/GASuspendViewDemo/GASuspendViewDemo/Suspend/GASuspendView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "D7416310-2EAD-4B05-AA42-D176D2ADDB4A - e28a41b390b618ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Kingfisher.RetrieveImageResult, Kingfisher.KingfisherError&gt;) -&gt; () in GASuspendViewDemo.GASuspendView.model.didset : Swift.Optional&lt;GASuspendViewDemo.GASuspendModel&gt;"
+                  moduleName = "GASuspendViewDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gamin/Documents/GASuspendViewDemo/GASuspendViewDemo/Suspend/GASuspendView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "144">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

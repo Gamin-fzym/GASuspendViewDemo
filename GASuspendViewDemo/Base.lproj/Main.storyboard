@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GASuspendViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ihe-KW-SKQ">
+                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="iyC-zu-0sN"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P21-PE-Anf">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可拖动悬浮视图" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0G-Eb-OZE">
+                                        <rect key="frame" x="136" y="11.666666666666671" width="121.33333333333331" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2H6-Rx-YSa"/>
+                                    <constraint firstItem="L0G-Eb-OZE" firstAttribute="centerY" secondItem="P21-PE-Anf" secondAttribute="centerY" id="ZTs-Tb-LDC"/>
+                                    <constraint firstItem="L0G-Eb-OZE" firstAttribute="centerX" secondItem="P21-PE-Anf" secondAttribute="centerX" id="qth-BK-LMR"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1W-eo-cK9">
+                                <rect key="frame" x="158.66666666666666" y="724" width="76" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="下一页"/>
+                                <connections>
+                                    <action selector="tapNextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CIf-Ni-NOl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ihe-KW-SKQ" secondAttribute="trailing" id="0Gz-dC-gpz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P21-PE-Anf" secondAttribute="trailing" id="1R4-6w-N4m"/>
+                            <constraint firstItem="P21-PE-Anf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9H8-O2-DAY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ihe-KW-SKQ" secondAttribute="bottom" id="DxE-cZ-8cJ"/>
+                            <constraint firstItem="Ihe-KW-SKQ" firstAttribute="top" secondItem="a1W-eo-cK9" secondAttribute="bottom" constant="10" id="EPG-a4-HWn"/>
+                            <constraint firstItem="a1W-eo-cK9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hHL-Qx-Xlb"/>
+                            <constraint firstItem="P21-PE-Anf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iRi-tW-ki1"/>
+                            <constraint firstItem="Ihe-KW-SKQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ltH-3I-tYH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

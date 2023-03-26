@@ -1,0 +1,6 @@
+framework module Pods_GASuspendViewDemoTests {
+  umbrella header "Pods-GASuspendViewDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
