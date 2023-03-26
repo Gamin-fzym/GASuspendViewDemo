@@ -19,6 +19,6 @@
 
 ![image](https://github.com/Gamin-fzym/GASuspendViewDemo/blob/main/12.gif)
 
-3.现在悬浮视图只能靠底部左右拖动
+3.限制悬浮视图只能靠底部左右拖动
 
 ![image](https://github.com/Gamin-fzym/GASuspendViewDemo/blob/main/13.gif)
